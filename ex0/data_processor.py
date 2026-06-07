@@ -177,10 +177,10 @@ if __name__ == "__main__":
     print(f"Trying to validate input 'Hello': {log_proc.validate('Hello')}")
     print(f"Trying to validate a valid list {test_log} : "
           f"{log_proc.validate(test_log)}")
-    print(f"Trying to validate an invalid list ['a', 42, 'b']: "
-          f"{log_proc.validate(['a', 42, 'b'])}")
-    print("Test invalid ingestion of int '123456' without prior validation:")
-    log_proc.ingest(123456)
+    print(f"Trying to validate an invalid list ['f', 072331, 'v']: "
+          f"{log_proc.validate(['f', 072331, 'v'])}")
+    print("Test invalid ingestion of int '072331' without prior validation:")
+    log_proc.ingest(072331)
 
     print(f"Processing data: {test_log}")
     print("Extracting 2 value...")
